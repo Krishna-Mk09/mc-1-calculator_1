@@ -31,7 +31,7 @@ public class ScientificCalculator {
 		if (num <= 0) {
 			throw new CalculatorException("number should be greater the zero");
 		} else {
-			Math.ceil(5.0);
+			System.out.println(Math.ceil(5.0));
 		}
 		//check if num is equal to or less than 0 than throw the userdefined exception with proper message
 		//or else call ceil method of Math class and return the value
@@ -42,7 +42,7 @@ public class ScientificCalculator {
 		if (num <= 0) {
 			throw new CalculatorException("number is to be above 0");
 		} else {
-			Math.floor(6.0);
+			System.out.println(Math.floor(6.0));
 		}
 		//check if num is equal to or less than 0 than throw the userdefined exception with proper message
 		//or else call floor method of Math class and return the value
@@ -53,7 +53,7 @@ public class ScientificCalculator {
 		if (num1 < num2) {
 			throw new CalculatorException("num1 should not be greater then number 2");
 		} else {
-			Math.pow(2.0, 3.0);
+			System.out.println(Math.pow(2.0, 3.0));
 		}
 		//if num1 is less than num2 than throw the userdefined exception with proper message
 		//else use Math pow method and return the value
@@ -65,7 +65,7 @@ public class ScientificCalculator {
 		if (num <= 0) {
 			throw new CalculatorException("number should be greater than zero");
 		} else {
-			Math.sqrt(20.0);
+			System.out.println(Math.sqrt(20.0));
 		}
 		//check if num is equal to or less than 0 than throw the userdefined exception with proper message
 		//or else call sqrt method of Math class and return the value

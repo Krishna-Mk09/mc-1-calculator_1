@@ -21,7 +21,7 @@ public class MathematicalCalculatorTest {
     }
 
     @Test
-    public void givenTwoPositiveNumbersThenReturnResult() {
+    public void givenTwoPositiveNumbersThenReturnResult() throws CalculatorException {
         int addResult = mc.add(15, 17);
         int subResult = mc.subtract(37, 7);
         int mulResult = mc.multiply(8, 5);
@@ -34,7 +34,7 @@ public class MathematicalCalculatorTest {
     }
 
     @Test
-    public void givenTwoNegativeNumbersThenReturnResult() {
+    public void givenTwoNegativeNumbersThenReturnResult() throws CalculatorException {
         int addResult = mc.add(-15, 17);
         int subResult = mc.subtract(37, -7);
         int mulResult = mc.multiply(8, -5);
@@ -46,7 +46,7 @@ public class MathematicalCalculatorTest {
     }
 
     @Test
-    public void givenZeroAsOneNumberThenReturnException() {
+    public void givenZeroAsOneNumberThenReturnException() throws CalculatorException {
         assertEquals(0, mc.divide(30, 0));
     }
 

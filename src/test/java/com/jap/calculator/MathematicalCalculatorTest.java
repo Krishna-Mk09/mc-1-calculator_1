@@ -30,7 +30,6 @@ public class MathematicalCalculatorTest {
         assertEquals(30, subResult);
         assertEquals(40, mulResult);
         assertEquals(5, divResult);
-
     }
 
     @Test
@@ -49,5 +48,4 @@ public class MathematicalCalculatorTest {
     public void givenZeroAsOneNumberThenReturnException() throws CalculatorException {
         assertEquals(0, mc.divide(30, 0));
     }
-
 }

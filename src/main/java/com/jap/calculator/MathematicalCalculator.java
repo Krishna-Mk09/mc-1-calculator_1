@@ -13,8 +13,8 @@ public class MathematicalCalculator {
 
         try {
             return num1 + num2;
-        } catch (ArithmeticException e) {
-            throw new RuntimeException(e);
+        } catch (ArithmeticException exception) {
+            throw new RuntimeException(exception);
         }
     }
 
@@ -28,8 +28,8 @@ public class MathematicalCalculator {
     public int subtract(int num1, int num2) throws CalculatorException {
         try {
             return num1 - num2;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (Exception exception) {
+            throw new RuntimeException(exception);
         }
     }
 
@@ -44,8 +44,8 @@ public class MathematicalCalculator {
     public int multiply(int num1, int num2) throws CalculatorException {
         try {
             return num1 * num2;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (Exception exception) {
+            throw new RuntimeException(exception);
         }
     }
 
@@ -63,8 +63,8 @@ public class MathematicalCalculator {
             } else
                 //write the code and handle the ArithmeticException
                 return num1 / num2;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (Exception exception) {
+            throw new RuntimeException(exception);
         }
     }
 
@@ -78,8 +78,8 @@ public class MathematicalCalculator {
     public int modulo(int num1, int num2) throws CalculatorException {
         try {
             return num1 % num2;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (Exception exception) {
+            throw new RuntimeException(exception);
         }
     }
 }
